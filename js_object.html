@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript object </title>
+    <style>
+        *{
+            text-align: center;
+            color:rgb(30, 32, 30);
+            background-color: rgb(160, 190, 190);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Creating Javascript Object 
+    </h1>
+    <p id="demo"></p>
+
+    <!-- use object literal to create js object -->
+    <!-- <script>
+        var student = {
+            name:"sandeep pal",
+            age: 29,
+            studies:"Computer Science and Mathematics"
+        }
+        document.getElementById("demo").innerHTML = student.name + " is the age of " + student.age + " studies with " + student.studies;
+    </script> -->
+    <!-- other create js obejct by using keyword new obejct -->
+    <!-- <script>
+        var student = new Object();
+        student.name = "sandeep";
+        student.age = 29;
+        student.studies = "computer science"
+
+        document.getElementById("demo").innerHTML = student.name + " is the age of " + student.age + " studies with " + student.studies;
+
+    </script> -->
+    <!-- Create an object by using object  constructor -->
+     <script>
+        function stud(name, age, studies){
+            this.name = name;
+            this.age = age;
+            this.studies = studies;
+        }
+        const student = new stud("sandeep pal", 28, "science");
+        
+        document.getElementById("demo").innerHTML = student.name + " is the age of " + student.age + " studies with " + student.studies;
+     </script>
+     
+
+</body>
+</html>
